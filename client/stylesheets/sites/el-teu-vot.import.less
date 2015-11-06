@@ -1,0 +1,161 @@
+#elTeuVotContainer {
+    text-align: center;
+
+    .mainPageButton {
+        width: 250px !important;
+        margin-top: 20px;
+        font-size: 0.9em !important;
+    }
+
+    .mainPageButton:hover {
+        font-weight: bold;
+    }
+
+    #countText {
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #explanationText {
+        @media (max-width: @screen-xs-max) {
+            font-size: 1.2em;
+        }
+
+        font-size: 1.4em;
+        margin-bottom: 50px !important;
+
+        a {
+            color: @orange;
+        }
+    }
+
+    ul.linkList {
+        margin-bottom: 40px !important;
+        padding-left: 0 !important;
+
+        li:first-child {
+            display: block;
+            margin: 0 auto;
+        }
+
+        li {
+            .tbMargin(15px);
+
+            display: inline-block;
+            .lrMargin(20px);
+
+            a {
+                color: black;
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .buttonContainer {
+        margin-bottom: 20px;
+    }
+
+    #critic img {
+        width: 240px;
+        margin-bottom: 20px;
+    }
+
+    #vilaweb img {
+        width: 150px;
+    }
+
+    #elperiodico img {
+        width: 250px;
+
+        @media(max-width: @screen-xxs-max) {
+            width: 200px;
+        }
+    }
+
+    #elpais img {
+        width: 190px;
+    }
+
+    #vuitaldia img {
+        width: 130px;
+    }
+
+    #btv img {
+        width: 200px;
+    }
+
+    #apps4citizens img {
+        width: 250px;
+
+        @media(max-width: @screen-xxs-max) {
+            width: 210px;
+        }
+    }
+
+    #catradio img {
+        width: 150px;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    #elTeuVotContainer {
+        padding-left: 30px;
+        padding-right: 30px;
+
+        #welcomeText {
+            font-size: 20px;
+        }
+
+        .mainPageButton {
+            line-height: 45px;
+            font-size: 20px;
+            width: 180px;
+            height: 45px;
+        }
+
+        #countText {
+            font-size: 1.1em;
+        }
+    }
+}
+
+@media (max-height: 550px) {
+    #elTeuVotContainer {
+        #welcomeText {
+            font-size: 20px !important;
+        }
+
+        .mainPageButton {
+            line-height: 45px !important;
+            font-size: 20px !important;
+            width: 180px !important;
+            height: 45px !important;
+        }
+
+        p#countText {
+            font-size: 1.1em !important;
+            margin-top: 15px !important;
+        }
+    }
+}
+
+@media (min-width: @screen-xs-max) {
+    #elTeuVotContainer {
+        #welcomeText {
+            font-size: 20px;
+        }
+
+        .mainPageButton {
+            line-height: 55px;
+            font-size: 25px;
+            width: 220px;
+            height: 55px;
+        }
+
+        #countText {
+            font-size: 1.3em;
+            margin-top: 40px !important;
+        }
+    }
+}

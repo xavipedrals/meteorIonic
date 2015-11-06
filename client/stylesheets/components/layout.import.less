@@ -1,0 +1,44 @@
+// Sticky footer
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body.hasFooter {
+    margin-bottom: @footer-height;
+}
+
+// Styling
+
+body {
+    min-height: @min-page-height;
+    min-width: @min-page-width;
+}
+
+footer {
+    min-width: @min-page-width;
+}
+
+body #main:not(.fixedHeader) {
+    padding-top: 0 !important;
+}
+
+
+#main.fixedHeader {
+    @media (min-width: @screen-lg-min) {
+        padding-top: 120px;
+    }
+
+    @media (min-width: @screen-xs-min) and (max-width: @screen-md-max) {
+        padding-top: 102px;
+    }
+
+    @media (min-width: 401px) and (max-width: @screen-xxs-max) {
+        padding-top: 85px;
+    }
+
+    @media (max-width: 400px) {
+        padding-top: 22%;
+    }
+}

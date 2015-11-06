@@ -1,0 +1,1 @@
+@app = angular.module('', ['angular-meteor', 'ui.router', 'pascalprecht.translate', 'ngSanitize'])
